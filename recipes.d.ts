@@ -7,19 +7,16 @@ import { Smithing } from './recipes/smithing';
 import { SmithingTrim } from './recipes/smithing_trim';
 import { SpecialHardcodedUuid } from './recipes/special_hardcoded';
 
-declare module "recipes" {
-    interface Recipes {
-        potionContainerChange: PotionContainerChange[];
-        potionType: PotionType[],
-        shapedChemistry: Shaped[],
-        shapedCrafting: Shaped[],
-        shalessChemistry: Shapeless[],
-        shapelessCrafting: Shapeless[],
-        shapelessShulkerBox: Shapeless[],
-        smelting: Smelting[],
-        smithing: Smithing[],
-        smithingTrim: SmithingTrim[],
-        specialHardcoded: SpecialHardcodedUuid[],
-    }
-    export = Recipes;
+declare module "@jsprismarine/bedrock-data/recipes" {
+    export const potionContainerChange: PotionContainerChange[];
+    export const potionType: PotionType[];
+    export const shapedChemistry: Shaped[];
+    export const shapedCrafting: Shaped[];
+    export const shalessChemistry: Shapeless[];
+    export const shapelessCrafting: Shapeless[];
+    export const shapelessShulkerBox: Shapeless[];
+    export const smelting: Smelting[];
+    export const smithing: Smithing[];
+    export const smithingTrim: SmithingTrim[];
+    export const specialHardcoded: SpecialHardcodedUuid[];
 }

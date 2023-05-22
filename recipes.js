@@ -10,7 +10,7 @@ const smithing = require('./resources/recipes/smithing.json');
 const smithingTrim = require('./resources/recipes/smithing_trim.json');
 const specialHardcoded = require('./resources/recipes/special_hardcoded.json');
 
-module.exports = [
+export {
     potionContainerChange,
     potionType,
     shapedChemistry,
@@ -22,4 +22,4 @@ module.exports = [
     smithing,
     smithingTrim,
     specialHardcoded,
-];
+};

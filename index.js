@@ -1,7 +1,7 @@
 'use strict';
 const fs = require('fs');
 
-const banner_patterns = require('./resources/banner_patterns.json');
+const bannerPatterns = require('./resources/banner_patterns.json');
 const biomeIdMap = require('./resources/biome_id_map.json');
 const blockIdToItemIdMap = require('./resources/block_id_to_item_id_map.json');
 const blockStateMetaMap = require('./resources/block_state_meta_map.json');
@@ -21,8 +21,8 @@ const canonicalBlockStates = fs.readFileSync(__dirname + '/resources/canonical_b
 const entityIdentifiers = fs.readFileSync(__dirname + '/resources/entity_identifiers.nbt');
 const r12ToCurrentBlockMap = fs.readFileSync(__dirname + '/resources/r12_to_current_block_map.bin');
 
-module.exports = {
-    banner_patterns,
+export {
+    bannerPatterns,
     biomeDefinitions,
     biomeIdMap,
     blockIdToItemIdMap,

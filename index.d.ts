@@ -13,25 +13,21 @@ import Recipes = require("./recipes");
 import { RequiredItemList } from './required_item_list';
 
 declare module '@jsprismarine/bedrock-data' {
-    interface BedrockData {
-        bannerPatterns: BannerPattern[];
-        biomeDefinitions: any;
-        biomeIdMap: BiomeIdMap;
-        blockIdToItemIdMap: BlockIdToItemIdMap;
-        blockStateMetaMap: BlockStateMetaMapEntry[]
-        canonicalBlockStates: any;
-        commandArgTypes: CommandArgTypes;
-        creativeitems: CreativeItem[];
-        entityIdentifiers: any;
-        entityIdMap: EntityIdMap;
-        itemTags: ItemTags;
-        levelSoundIdMap: LevelSoundIdMap;
-        particleIdMap: ParticleIdMap;
-        r12ToCurrentBlockMap: any;
-        r16ToCurrentItemMap: R16ToCurrentItemMap;
-        recipes: typeof Recipes;
-        requiredItemList: RequiredItemList;
-    }
-
-    export = BedrockData;
+    export const bannerPatterns: BannerPattern[];
+    export const biomeDefinitions: any;
+    export const biomeIdMap: BiomeIdMap;
+    export const blockIdToItemIdMap: BlockIdToItemIdMap;
+    export const blockStateMetaMap: BlockStateMetaMapEntry[]
+    export const canonicalBlockStates: any;
+    export const commandArgTypes: CommandArgTypes;
+    export const creativeitems: CreativeItem[];
+    export const entityIdentifiers: any;
+    export const entityIdMap: EntityIdMap;
+    export const itemTags: ItemTags;
+    export const levelSoundIdMap: LevelSoundIdMap;
+    export const particleIdMap: ParticleIdMap;
+    export const r12ToCurrentBlockMap: any;
+    export const r16ToCurrentItemMap: R16ToCurrentItemMap;
+    export const recipes: typeof Recipes;
+    export const requiredItemList: RequiredItemList;
 }
